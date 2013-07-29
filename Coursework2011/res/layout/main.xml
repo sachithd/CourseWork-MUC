@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*">
+                <TableRow>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Location"
+                        android:checked="true"
+                        android:enabled="false"
+                        />
+                    <CheckBox android:id="@+id/log_light_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Light"
+                        />
+                </TableRow>
+                <TableRow >
+                    <CheckBox android:id="@+id/log_acceleration_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Acceleration"
+                        />
+                    <CheckBox android:id="@+id/log_temperature_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Temperature"
+                        />
+                </TableRow>
+                <TableRow>
+                     <CheckBox android:id="@+id/log_picture_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Picture"
+                        />
+                     <CheckBox android:id="@+id/log_noise_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Noise"
+                        />
+                </TableRow>
+            </TableLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+                <EditText android:id="@+id/interval_picker"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:layout_gravity="left"
+                    android:text="15"
+                    android:numeric="integer"
+                    />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Log Interval (in seconds)"
+                    android:layout_weight="0.3"
+                    android:layout_gravity="right"
+                    android:paddingTop="10dip"
+                    android:paddingLeft="10dip"
+                />
+             </LinearLayout>
+            <Button android:id="@+id/startbutton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Start"
+                />
+            <Button android:id="@+id/stopbutton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Stop"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Currently not logging. Press start to begin."
+                android:id="@+id/state_box"
+                />
+            <Button android:id="@+id/clearbutton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Clear logs"
+                android:layout_marginTop="30dip"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MUC Life Logging</string>
+    <string name="title">MUC Logging App</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="clear">Clear</string>
+    <string name="really_clear">Really clear logs and pictures?</string>
+    <string name="searching_for_location">Searching for location ...</string>
+    <string name="logging">Logging...</string>
+    <string name="currently_not_logging">Currently not logging. Press start to begin.</string>
+    <string name="logging_stopped">Logging stopped.</string>
+    <string name="uploading_pictures">Uploading pictures ...</string>
+    <string name="uploading_done">Pictures have been uploaded. Press start to log again.</string>
+    <string name="uploading_failed">Uploading pictures failed. Press start to log again.</string>
+</resources>
